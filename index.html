@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" media="screen and (max-width: 768px)" href="/css/mobile.css">
-    <link rel="stylesheet" media="screen and (max-width: 1100px)" href="css/widescreen.css">
+    <link rel="stylesheet" media="screen and (min-width: 1100px)" href="css/widescreen.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">
     <title>EdgeLeder Financial | Accounting & Investment</title>
 </head>
 <body>
+
+    <!-- Navigation Menu -->
     <nav id="navbar">
         <h1 class="logo">
             <span class="text-primary">
@@ -18,11 +20,144 @@
             </span>Ledger
         </h1>
         <ul class="nav-list">
-            <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#showcase" class="nav-link">Home</a></li>
             <li class="nav-item"><a href="#what" class="nav-link">What</a></li>
             <li class="nav-item"><a href="#who" class="nav-link">Who</a></li>
             <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
     </nav>
+
+    <!-- Header Section -->
+    <header id="showcase">
+        <div class="showcase-content">
+            <h1 class="l-heading">
+                The Sky Is The Limit
+            </h1>
+            <p class="lead">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis consectetur amet voluptas est nisi quidem.
+            </p>
+            <a href="#what" class="btn">Read More</a>
+        </div>
+    </header>
+
+    <!-- What We Do - Section -->
+    <section id="what" class="bg-light py-1">
+        <div class="container">
+            <h2 class="m-heading text-center">
+                <span class="text-primary">What</span> We Do
+            </h2>
+            <div class="items">
+
+                <div class="item">
+                    <i class="fas fa-university fa-2x"></i>
+                    <div class="card-content">
+                        <h3>Investment and Banking</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, est in officiis quaerat nihil recusandae.</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <i class="fas fa-book-reader fa-2x"></i>
+                    <div class="card-content">
+                        <h3>Portfolio Management</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, est in officiis quaerat nihil recusandae.</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <i class="fas fa-pencil-alt fa-2x"></i>
+                    <div class="card-content">
+                        <h3>Tax & Custodial</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, est in officiis quaerat nihil recusandae.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Section - Who We Are -->
+    <section id="who">
+        <div class="who-img"></div>
+        <div class="who-text bg-dark p-2">
+            <h2 class="m-heading">
+                <span class="text-primary">Who</span> We Are
+            </h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo facere cupiditate perspiciatis id soluta, laborum consectetur asperiores minus reiciendis quibusdam, enim modi quod officia accusamus exercitationem suscipit, eaque laudantium mollitia?</p>
+            <h3>Our Team</h3>
+            <ul class="list">
+                <li>Mark Smith: CEO</li>
+                <li>John Doe: CFO</li>
+                <li>Bobur Rajapov: Lead Accountant</li>
+                <li>Temur Avazov: Investment Manager</li>
+                <li>Farrux Nurgushanov: Senior Accountant</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Section - Our Clients -->
+    <section id="clients" class="p-2">
+        <h2 class="m-heading text-center">
+            <span class="text-primary">Our</span> Clients
+        </h2>
+
+        <div class="container">
+            <div class="items py-2">
+                <img src="/images/logos/logo1.png" alt="Client">
+                <img src="/images/logos/logo2.png" alt="Client">
+                <img src="/images/logos/logo3.png" alt="Client">
+                <img src="/images/logos/logo4.png" alt="Client">
+        </div>
+        </div>
+    </section>
+
+    <!-- Section - Contact -->
+    <section id="contact">
+        <div class="contact-form bg-primary p-2">
+            <h2 class="m-heading">Contact Form</h2>
+            <p>Please se the form below to contact us</p>
+            <form action="GET">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="name">Email</label>
+                    <input type="text" name="email" id="email" placeholder="Enter Your Email">
+                </div>
+                <div class="form-group">
+                    <label for="name">Phone Number</label>
+                    <input type="text" name="phone" id="phone" placeholder="Enter Your Phone">
+                </div>
+                <div class="form-group">
+                    <label for="name">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    <input type="submit" value="Send" class="btn btn-dark">
+                </div>
+            </form>
+        </div>
+
+       
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20568.724410156403!2d69.35110552649294!3d41.25984848303271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae58de6e8361c9%3A0x746ae1b87a4efcd8!2sBardankul&#39;%2C%20Uzbekistan!5e0!3m2!1sen!2s!4v1602739210538!5m2!1sen!2s" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+    </section>
+
+    <!-- Section - Footer -->
+    <footer id="main-footer" class="text-center p-1 bg-dark">
+        <div class="container">
+            <p>Copyrights &copy; 2020, EdgeLedger, All Rights Reserved</p>
+        </div>
+    </footer>
+    <script>
+        window.addEventListener('scroll', function(){
+            if(window.scrollY > 60){
+                document.querySelector('#navbar').style.opacity = 0.9
+            }
+            else{
+                document.querySelector('#navbar').style.opacity = 1
+            }
+        })
+    </script>
 </body>
 </html>
